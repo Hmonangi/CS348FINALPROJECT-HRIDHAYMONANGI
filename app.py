@@ -104,7 +104,7 @@ def load_data():
     conn.commit()
 if cursor.execute("SELECT COUNT(*) FROM TV_Shows").fetchone()[0] == 0:
     load_data()
-st.title("📺 IMDb TV Shows App (Stage 2)")
+st.title("📺 IMDb TV Shows App (Stage 3)")
 
 
 genres = cursor.execute("SELECT genre_id, genre_name FROM Genres").fetchall()
